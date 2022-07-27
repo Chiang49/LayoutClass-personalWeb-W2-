@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+
+$primary: #000000;
+$secondary: #891818;
+$border-color: #707070;
+$spacer: 8px;
+$font-base: 20px;
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: $font-base;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: $primary;
+}
+
+header{
+    height: 958px;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week2/banner.png?raw=true')center no-repeat;
+    border: 1px solid $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: $spacer * 8 0px;
+    ul{
+        li{
+            margin-bottom: $spacer * 2;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.personal-photo{
+    margin-bottom: $spacer * 2.5;
+}
+.personal-inf{
+    width: 412px;
+    margin: 0 auto;
+    margin-bottom: $spacer * 3;
+    li{
+        &:nth-child(1){
+            margin-bottom: $spacer * 0.5;
+        }
+        &:nth-child(2){
+            margin-bottom: $spacer * 2;
+        }
+    }
+}
+.personal-work{
+    width: 384px;
+    margin: 0 auto;
+    padding-top: $spacer * 3.5;
+    border-top: 1px solid $primary;
+    li{
+        margin-bottom: $spacer * 3.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 22px;
+            height: 22px;
+            background: $secondary;
+            border-radius: 50%;
+            margin-right: $spacer * 2;
+        }
+    }
+}
+.worksCard{
+    img{
+        margin-bottom: $spacer * 2;
+    }
+    &:nth-child(1), &:nth-child(4){
+        margin-bottom: $spacer * 6;
+    }
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction{
+    p{
+        width: 283px;
+    }
+}
+
+.title{
+    font-size: $font-base * 3.2;
+    margin-bottom: $spacer * 1.5;
+}
+
+.bg-primary{
+    background: $primary;
+}
+
+// 文字設定
+.text-white{
+    color: #fff;
+}
+
+.text-s{
+    font-size: $font-base * 1.2;
+}
+.text-m{
+    font-size: $font-base * 3.2;
+}
+.text-l{
+    font-size: $font-base * 4;
+}
+
+.textWeight-s{
+    font-weight: 700;
+}
+.textWeight-l{
+    font-weight: 900;
+}
+
+// hover
+.hover-icon{
+    transition: .5s;
+    &:hover{
+        border-radius: 25%;
+        box-shadow: 0 0 4px 4px rgba(#aaa, .5);
+    }
+}
+.hover-img{
+    position: relative;
+    transition: .5s;
+    &:hover{
+        &::before{
+            content: '';
+            display: block;
+            background: rgba($color: #aaa, $alpha: .5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+// 排版設定
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pt-7{
+    padding-top: $spacer * 7;
+}
+.pb-20{
+    padding-bottom: $spacer * 20;
+}
+
+.mb-2{
+    margin-bottom: $spacer * 2;
+}
+.mb-4{
+    margin-bottom: $spacer * 4;
+}
+.mb-5{
+    margin-bottom: $spacer * 5;
+}
+.mb-7{
+    margin-bottom: $spacer * 7;
+}
+.mb-8{
+    margin-bottom: $spacer * 8;
+}
+.mb-18{
+    margin-bottom: $spacer * 18;
+}

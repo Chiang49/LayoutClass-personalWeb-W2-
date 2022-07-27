@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  height: 958px;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week2/banner.png?raw=true") center no-repeat;
+  border: 1px solid #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  padding: 64px 0px;
+}
+
+footer ul li {
+  margin-bottom: 16px;
+}
+
+footer ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.personal-photo {
+  margin-bottom: 20px;
+}
+
+.personal-inf {
+  width: 412px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.personal-inf li:nth-child(1) {
+  margin-bottom: 4px;
+}
+
+.personal-inf li:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.personal-work {
+  width: 384px;
+  margin: 0 auto;
+  padding-top: 28px;
+  border-top: 1px solid #000000;
+}
+
+.personal-work li {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal-work li:last-child {
+  margin-bottom: 0px;
+}
+
+.personal-work li::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.worksCard img {
+  margin-bottom: 16px;
+}
+
+.worksCard:nth-child(1), .worksCard:nth-child(4) {
+  margin-bottom: 48px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.introduction p {
+  width: 283px;
+}
+
+.title {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.bg-primary {
+  background: #000000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-s {
+  font-size: 24px;
+}
+
+.text-m {
+  font-size: 64px;
+}
+
+.text-l {
+  font-size: 80px;
+}
+
+.textWeight-s {
+  font-weight: 700;
+}
+
+.textWeight-l {
+  font-weight: 900;
+}
+
+.hover-icon {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hover-icon:hover {
+  border-radius: 25%;
+  -webkit-box-shadow: 0 0 4px 4px rgba(170, 170, 170, 0.5);
+          box-shadow: 0 0 4px 4px rgba(170, 170, 170, 0.5);
+}
+
+.hover-img {
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hover-img:hover::before {
+  content: '';
+  display: block;
+  background: rgba(170, 170, 170, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt-7 {
+  padding-top: 56px;
+}
+
+.pb-20 {
+  padding-bottom: 160px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.mb-7 {
+  margin-bottom: 56px;
+}
+
+.mb-8 {
+  margin-bottom: 64px;
+}
+
+.mb-18 {
+  margin-bottom: 144px;
+}
+/*# sourceMappingURL=all.css.map */
